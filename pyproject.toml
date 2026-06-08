@@ -1,0 +1,31 @@
+[project]
+name = "llm-based-document-qa"
+version = "0.1.0"
+description = "LLM Based Document QA System"
+authors = [
+    {name = "Vaijanath Birajdar"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+
+dependencies = [
+    "langchain==0.1.20",
+    "langchain-core==0.1.53",
+    "langchain-community==0.0.38",
+    "langchain-openai==0.1.7",
+    "langchain-huggingface==0.0.3",
+
+    "faiss-cpu==1.8.0",
+    "sentence-transformers>=2.6.0",
+
+    "pypdf>=4.0",
+    "python-dotenv",
+
+    "fastapi>=0.110",
+    "uvicorn[standard]",
+    "httpx"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
